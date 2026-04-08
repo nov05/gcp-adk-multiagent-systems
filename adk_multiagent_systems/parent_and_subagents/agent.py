@@ -71,7 +71,7 @@ root_agent = Agent(
         temperature=0,
     ),
     # Add the sub_agents parameter when instructed below this line
-
+    sub_agents=[travel_brainstormer, attractions_planner]  ## Added by Nov05
 )
 
 graceful_plugin = Graceful429Plugin(
