@@ -2,6 +2,8 @@
 
 * Lab - https://www.skills.google/paths/3273/course_templates/1275/labs/606594
 
+## 👉 Task 1. Install ADK and set up your environment
+
   ```bash
   git clone https://github.com/nov05/gcp-adk-multiagent-systems.git
   cd gcp-adk-multiagent-systems
@@ -43,10 +45,11 @@
   A new browser tab will open with the ADK Dev UI.    
   From the Select an agent dropdown on the left, select `workflow_agents`.   
   Start the conversation with: `hello`. It may take a few moments for the agent to respond, but it should request you enter a historical figure to start your film plot generation.    
-  When prompted to enter a historical figure, you can enter one of your choice or use one of these examples:   
+  When prompted to enter a historical figure, you can enter one of your choice or use one of these examples:     
+  
   ```text
-  Zhang Zhongjing - a renowned Chinese physician from the 2nd Century CE.
   Ada Lovelace - an English mathematician and writer known for her work on early computers
+  Zhang Zhongjing - a renowned Chinese physician from the 2nd Century CE.
   Marcus Aurelius - a Roman emperor known for his philosophical writings.
   ```
 
@@ -54,7 +57,8 @@
 
   Return to the ADK Dev UI tab and click the `+ New Session` button in the upper right to start a new session.   
   Begin a new conversation with: `hello`   
-  When prompted to choose a kind of historical character, choose one that interests you. Some ideas include:    
+  When prompted to choose a kind of historical character, choose one that interests you. Some ideas include:     
+  
   ```text
   an industrial designer who made products for the masses
   a cartographer (a map maker)
