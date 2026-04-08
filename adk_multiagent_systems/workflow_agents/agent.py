@@ -143,13 +143,13 @@ file_writer = Agent(
             - The CASTING_REPORT
     
     PLOT_OUTLINE:
-    { 👉 PLOT_OUTLINE? }
+    { PLOT_OUTLINE? }
     
     BOX_OFFICE_REPORT:
-    { 👉 box_office_report? }
+    { box_office_report? }
     
     CASTING_REPORT:
-    { 👉 casting_report? }
+    { casting_report? }
     """,
     generate_content_config=types.GenerateContentConfig(
         temperature=0,
