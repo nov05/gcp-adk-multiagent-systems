@@ -69,6 +69,8 @@ You should receive an acknowledgement in the response, like:
 
 ## 👉 Task 4. Begin building a multi-agent system with a SequentialAgent  
 
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/task%204.jpg" width=600>  
+  
   ```bash
   cd ~/gcp-adk-multiagent-systems/adk_multiagent_systems
   adk web --allow_origins "regex:https://.*\.cloudshell\.dev" --reload_agents
