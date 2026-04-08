@@ -65,9 +65,7 @@ def write_file(
     filename: str,
     content: str
 ) -> dict[str, str]:
-    ## Changed by Nov05
-    # target_path = os.path.join(directory, filename)
-    target_path = os.path.join(directory, 'workflow_agents', filename)
+    target_path = os.path.join(directory, filename)
     os.makedirs(os.path.dirname(target_path), exist_ok=True)
     with open(target_path, "w") as f:
         f.write(content)
@@ -138,19 +136,19 @@ file_writer = Agent(
     - Create a marketable, contemporary movie title suggestion for the movie described in the PLOT_OUTLINE. If a title has been suggested in PLOT_OUTLINE, you can use it, or replace it with a better one.
     - Use your 'write_file' tool to create a new markdown (.md) file with the following arguments:
         - for a filename, use the movie title
-        - Write to the 'movie_pitches' directory.
+        - Write to the 'workflow_agents/movie_pitches' directory.
         - For the 'content' to write, include:
             - The PLOT_OUTLINE
             - The BOX_OFFICE_REPORT
             - The CASTING_REPORT
     
-    PLOT_OUTLINE:
+    👉 PLOT_OUTLINE:
     { PLOT_OUTLINE? }
     
-    BOX_OFFICE_REPORT:
+    👉 BOX_OFFICE_REPORT:
     { box_office_report? }
     
-    CASTING_REPORT:
+    👉 CASTING_REPORT:
     { casting_report? }
     """,
     generate_content_config=types.GenerateContentConfig(
