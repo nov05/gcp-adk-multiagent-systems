@@ -29,11 +29,35 @@
   adk run parent_and_subagents
   ```
 
+When you are presented the [user]: prompt, greet the agent with: `hello`   
+Tell the agent: `I could use some help deciding.`   
+Notice from the name `[travel_brainstormer]` in brackets in the response that the root_agent (named `[steering]`) has transferred the conversation to the appropriate sub-agent based on that sub-agent's description alone.      
+At the `user:` prompt, enter `exit` to end the conversation.    
+
 ## 👉 Task 3. Use session state to store and retrieve specific information
 
   ```bash
   adk web --allow_origins "regex:https://.*\.cloudshell\.dev"
   ```
+
+A new browser tab will open with the ADK Dev UI.  
+From the Select an agent dropdown on the left, select the `parent_and_subagents` agent from the dropdown.  
+Start the conversation with: hello
+After the agent greets you, reply with:
+
+```text
+I'd like to go to Egypt.
+```
+
+You should be transferred to the attractions_planner and be provided a list of attractions.   
+Choose an attraction, for example:   
+
+```text
+I'll go to the Sphinx
+```
+
+You should receive an acknowledgement in the response, like:    
+`Okay, I've saved The Sphinx to your list. Here are some other attractions...`    
 
 ## 👉 Task 4. Begin building a multi-agent system with a SequentialAgent  
 
