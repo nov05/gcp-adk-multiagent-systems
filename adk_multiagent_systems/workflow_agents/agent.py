@@ -21,6 +21,10 @@ from google.adk.apps.app import App
 from langchain_community.tools import WikipediaQueryRun
 from langchain_community.utilities import WikipediaAPIWrapper
 
+## Added by Nov05
+from google.adk.tools import exit_loop
+from google.adk.models import Gemini
+
 
 cloud_logging_client = google.cloud.logging.Client()
 cloud_logging_client.setup_logging()
@@ -32,8 +36,10 @@ print(model_name)
 
 RETRY_OPTIONS = types.HttpRetryOptions(initial_delay=1, max_delay=3, attempts=30)
 
-# Tools
 
+#####################################################
+# Tools
+#####################################################
 
 def append_to_state(
     tool_context: ToolContext, field: str, response: str
@@ -65,8 +71,9 @@ def write_file(
         f.write(content)
     return {"status": "success"}
 
-
+#####################################################
 # Agents
+#####################################################
 
 file_writer = Agent(
     name="file_writer",
@@ -151,12 +158,63 @@ researcher = Agent(
     ],
 )
 
-film_concept_team = SequentialAgent(
-    name="film_concept_team",
-    description="Write a film plot outline and save it as a text file.",
+## Added by Nov05
+critic = Agent(
+    name="critic",
+    model=Gemini(model=model_name, retry_options=RETRY_OPTIONS),
+    description="Reviews the outline so that it can be improved.",
+    instruction="""
+    INSTRUCTIONS:
+    Consider these questions about the PLOT_OUTLINE:
+    - Does it meet a satisfying three-act cinematic structure?
+    - Do the characters' struggles seem engaging?
+    - Does it feel grounded in a real time period in history?
+    - Does it sufficiently incorporate historical details from the RESEARCH?
+
+    If the PLOT_OUTLINE does a good job with these questions, exit the writing loop with your 'exit_loop' tool.
+    If significant improvements can be made, use the 'append_to_state' tool to add your feedback to the field 'CRITICAL_FEEDBACK'.
+    Explain your decision and briefly summarize the feedback you have provided.
+
+    PLOT_OUTLINE:
+    { PLOT_OUTLINE? }
+
+    RESEARCH:
+    { research? }
+    """,
+    before_model_callback=log_query_to_model,
+    after_model_callback=log_model_response,
+    tools=[append_to_state, exit_loop]
+)
+
+## Added by Nov05
+writers_room = LoopAgent(
+    name="writers_room",
+    description="Iterates through research and writing to improve a movie plot outline.",
     sub_agents=[
         researcher,
         screenwriter,
+        critic
+    ],
+    max_iterations=5,
+)
+
+## Changed by Nov05
+## Task 4
+# film_concept_team = SequentialAgent(
+#     name="film_concept_team",
+#     description="Write a film plot outline and save it as a text file.",
+#     sub_agents=[
+#         researcher,
+#         screenwriter,
+#         file_writer
+#     ],
+# )
+## Task 5
+film_concept_team = SequentialAgent(
+    name="film_concept_team",
+    description="Write a film plot outline and save it as a markdown (.md) file.",
+    sub_agents=[
+        writers_room,
         file_writer
     ],
 )
