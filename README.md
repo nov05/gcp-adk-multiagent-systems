@@ -95,6 +95,7 @@ You should receive an acknowledgement in the response, like:
   a cartographer (a map maker)
   ```
 
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/2026-04-07%2020_51_44-NVIDIA%20GeForce%20Overlay.jpg" width=800>   
   <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/2026-04-07%2020_54_55-.jpg" width=800>  
   
 ## 👉 Task 6. Use a "fan out and gather" pattern for report generation with a ParallelAgent  
