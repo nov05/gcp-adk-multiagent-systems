@@ -15,7 +15,7 @@ Task 2. Explore transfers between parent, sub-agent, and peer agents
   cd ~/gcp-adk-multiagent-systems/adk_multiagent_systems
   cat << EOF > parent_and_subagents/.env
   GOOGLE_GENAI_USE_VERTEXAI=TRUE
-  GOOGLE_CLOUD_PROJECT=qwiklabs-gcp-00-c3ebf875872a
+  # GOOGLE_CLOUD_PROJECT=qwiklabs-gcp-00-c3ebf875872a  ## ⚠️ Your project ID
   GOOGLE_CLOUD_LOCATION=global
   MODEL=gemini-2.5-flash
   EOF
