@@ -42,11 +42,24 @@
 
 ## 👉 Task 5. Add a LoopAgent for iterative work
 
-  When prompted, enter a new character idea that you are interested in. Some ideas include:  
+  Return to the ADK Dev UI tab and click the `+ New Session` button in the upper right to start a new session.   
+  Begin a new conversation with: `hello`   
+  When prompted to choose a kind of historical character, choose one that interests you. Some ideas include:    
+  ```text
+  an industrial designer who made products for the masses
+  a cartographer (a map maker)
+  that guy who made crops yield more food
+  ```
+
+## 👉 Task 6. Use a "fan out and gather" pattern for report generation with a ParallelAgent  
+
+  In the ADK Dev UI, click `+ New Session` in the upper right.     
+  Enter `hello` to start the conversation.      
+  When prompted, enter a new character idea that you are interested in. Some ideas include:    
   
-    ```text
-    that actress who invented the technology for wifi
-    an exciting chef
-    key players in the worlds fair exhibitions
-    ```
+  ```text
+  that actress who invented the technology for wifi
+  an exciting chef
+  key players in the worlds fair exhibitions
+  ```
 
