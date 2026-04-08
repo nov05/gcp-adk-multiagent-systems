@@ -12,6 +12,7 @@
 ## 👉 Task 1. Install ADK and set up your environment
 
   ```bash
+  gh auth login 
   git clone https://github.com/nov05/gcp-adk-multiagent-systems.git
   cd gcp-adk-multiagent-systems
   export PATH=$PATH:"/home/${USER}/.local/bin"
