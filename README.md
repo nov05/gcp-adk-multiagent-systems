@@ -8,3 +8,15 @@
   export PATH=$PATH:"/home/${USER}/.local/bin"
   python3 -m pip install google-adk -r adk_multiagent_systems/requirements.txt
   ```
+
+Task 2. Explore transfers between parent, sub-agent, and peer agents
+
+  ```bash
+  cd ~/gcp-adk-multiagent-systems/adk_multiagent_systems
+  cat << EOF > parent_and_subagents/.env
+  GOOGLE_GENAI_USE_VERTEXAI=TRUE
+  GOOGLE_CLOUD_PROJECT=qwiklabs-gcp-00-c3ebf875872a
+  GOOGLE_CLOUD_LOCATION=global
+  MODEL=gemini-2.5-flash
+  EOF
+  ```
