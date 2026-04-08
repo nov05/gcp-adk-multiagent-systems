@@ -9,7 +9,7 @@
   python3 -m pip install google-adk -r adk_multiagent_systems/requirements.txt
   ```
 
-Task 2. Explore transfers between parent, sub-agent, and peer agents
+## 👉 Task 2. Explore transfers between parent, sub-agent, and peer agents
 
   ```bash
   cd ~/gcp-adk-multiagent-systems/adk_multiagent_systems
@@ -27,18 +27,26 @@ Task 2. Explore transfers between parent, sub-agent, and peer agents
   adk run parent_and_subagents
   ```
 
-Task 3. Use session state to store and retrieve specific information
+## 👉 Task 3. Use session state to store and retrieve specific information
 
   ```bash
   adk web --allow_origins "regex:https://.*\.cloudshell\.dev"
   ```
 
-Task 4. Begin building a multi-agent system with a SequentialAgent  
+## 👉 Task 4. Begin building a multi-agent system with a SequentialAgent  
 
   ```bash
   cd ~/gcp-adk-multiagent-systems/adk_multiagent_systems
   adk web --allow_origins "regex:https://.*\.cloudshell\.dev" --reload_agents
   ```
 
-Task 5. Add a LoopAgent for iterative work
+## 👉 Task 5. Add a LoopAgent for iterative work
+
+  When prompted, enter a new character idea that you are interested in. Some ideas include:  
+  
+    ```text
+    that actress who invented the technology for wifi
+    an exciting chef
+    key players in the worlds fair exhibitions
+    ```
 
