@@ -120,7 +120,7 @@ file_writer = Agent(
     # instruction="""
     # INSTRUCTIONS:
     # - Create a marketable, contemporary movie title suggestion for the movie described in the PLOT_OUTLINE. If a title has been suggested in PLOT_OUTLINE, you can use it, or replace it with a better one.
-    # - Use your 'write_file' tool to create a new markdown (.md) file with the following arguments:
+    # - Use your 'write_file' tool to create a new txt file with the following arguments:
     #     - for a filename, use the movie title
     #     - Write to the 'movie_pitches' directory.
     #     - For the 'content' to write, extract the following from the PLOT_OUTLINE:
@@ -134,7 +134,7 @@ file_writer = Agent(
     instruction="""
     INSTRUCTIONS:
     - Create a marketable, contemporary movie title suggestion for the movie described in the PLOT_OUTLINE. If a title has been suggested in PLOT_OUTLINE, you can use it, or replace it with a better one.
-    - Use your 'write_file' tool to create a new txt file with the following arguments:
+    - Use your 'write_file' tool to create a new markdown (.md) file with the following arguments:
         - for a filename, use the movie title
         - Write to the 'movie_pitches' directory.
         - For the 'content' to write, include:
