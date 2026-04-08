@@ -1,0 +1,21 @@
+Logline: A brilliant young woman, stifled by the rigid expectations of 19th-century society, defies her poetic legacy to forge an extraordinary partnership with an eccentric inventor, ultimately envisioning a future where machines can do more than just calculate, becoming the world's first computer programmer.
+
+Synopsis:
+
+Act I: The Burden of Genius
+*   **Introduction to Ada:** Introduce Ada Lovelace as a child, brilliant and curious, but constantly battling illness and the shadow of her famous, absent father, Lord Byron. Her mother, Lady Byron, pushes her towards mathematics to suppress any "poetic madness."
+*   **Early Mentorship & Spark of Interest:** Ada's intellectual curiosity is nurtured by tutors like Mary Somerville. She's introduced to the scientific and intellectual circles of London, where her sharp mind stands out.
+*   **Meeting Babbage:** At a soirée, a young Ada meets the eccentric Charles Babbage and is immediately captivated by his Analytical Engine, seeing something in it that others, including Babbage himself, don't. This meeting ignites her passion and sets her on a path distinct from societal expectations.
+*   **Societal Constraints & Personal Struggles:** Ada faces the limitations placed on women in her era, expected to marry and manage a household. Her health issues are a constant challenge. She marries William King, who becomes Earl of Lovelace, providing her with social standing but not necessarily intellectual freedom.
+
+Act II: The Poetical Scientist
+*   **Deepening Collaboration:** Ada's relationship with Babbage evolves into a deep intellectual partnership. She begins translating Menabrea's article on the Analytical Engine, but her "Notes" become far more significant than the translation itself, expanding on the machine's potential.
+*   **Vision Beyond Calculation:** This is where Ada's unique genius shines. While Babbage sees a powerful calculator, Ada envisions a machine that can manipulate symbols, create music, and process information beyond numbers. She struggles to articulate this revolutionary concept to a skeptical world, including Babbage at times, who is focused on the mechanical challenges.
+*   **Challenges and Doubts:** Funding for Babbage's machine is constantly an issue, leading to frustration and setbacks. Ada faces criticism and doubt from contemporaries who don't understand her visionary ideas. Her health deteriorates, and she might face personal sacrifices or difficult choices to pursue her work, perhaps even risking her reputation.
+*   **The First Program:** Ada writes the algorithm for calculating Bernoulli numbers, demonstrating the machine's potential – what is now recognized as the first computer program. This is a moment of intellectual triumph, but also one of isolation, as the true impact of her work is not yet understood by many.
+
+Act III: Legacy Unveiled
+*   **Unfinished Symphony:** The Analytical Engine remains largely unbuilt, a testament to the limitations of 19th-century engineering and funding. Ada's health worsens significantly, and she grapples with the idea that her groundbreaking work might never be fully realized in her lifetime.
+*   **A Glimmer of Recognition:** Despite the machine's physical absence, Ada's "Notes" begin to circulate and gain some recognition within scientific circles, even if their full implications are still decades away from being understood. Perhaps a key figure expresses admiration for her foresight, offering a small comfort.
+*   **Enduring Vision:** Ada's final moments are spent reflecting on her "poetical science" and her unwavering belief in the future potential of computing, a vision that transcends her own era. She passes away, leaving behind a legacy that will only be truly appreciated much later.
+*   **Modern Echoes (Epilogue):** A brief epilogue showing how her work is eventually recognized and celebrated, with modern computers and programming languages bearing her name, solidifying her place as a visionary and the first computer programmer, whose ideas laid the foundation for the digital age.
