@@ -126,6 +126,7 @@ You should receive an acknowledgement in the response, like:
   key female players in the worlds fair exhibitions
   ```
 
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/2026-04-07%2023_05_54-agent%20map.jpg" width=800>   
   <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/2026-04-07%2021_03_51-NVIDIA%20GeForce%20Overlay.jpg" width=800>     
   <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/2026-04-07%2021_07_43-.jpg" width=800>   
 
