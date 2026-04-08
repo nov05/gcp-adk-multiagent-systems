@@ -69,7 +69,7 @@ You should receive an acknowledgement in the response, like:
 
 ## 👉 Task 4. Begin building a multi-agent system with a SequentialAgent  
 
-  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/task%204.jpg" width=600>  
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/task%204.jpg" width=800>  
   
   ```bash
   cd ~/gcp-adk-multiagent-systems/adk_multiagent_systems
@@ -93,6 +93,8 @@ You should receive an acknowledgement in the response, like:
   
 ## 👉 Task 5. Add a LoopAgent for iterative work
 
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/task%205.jpg" width=800>  
+  
   Return to the ADK Dev UI tab and click the `+ New Session` button in the upper right to start a new session.   
   Begin a new conversation with: `hello`   
   When prompted to choose a kind of historical character, choose one that interests you. Some ideas include:     
@@ -108,6 +110,8 @@ You should receive an acknowledgement in the response, like:
   
 ## 👉 Task 6. Use a "fan out and gather" pattern for report generation with a ParallelAgent  
 
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/task%206.jpg" width=800>  
+  
   In the ADK Dev UI, click `+ New Session` in the upper right.     
   Enter `hello` to start the conversation.      
   When prompted, enter a new character idea that you are interested in. Some ideas include:    
