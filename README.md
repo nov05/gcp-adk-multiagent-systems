@@ -39,3 +39,6 @@ Task 4. Begin building a multi-agent system with a SequentialAgent
   cd ~/gcp-adk-multiagent-systems/adk_multiagent_systems
   adk web --allow_origins "regex:https://.*\.cloudshell\.dev" --reload_agents
   ```
+
+Task 5. Add a LoopAgent for iterative work
+
