@@ -75,22 +75,81 @@ def write_file(
 # Agents
 #####################################################
 
+box_office_researcher = Agent(
+    name="box_office_researcher",
+    model=Gemini(model=model_name, retry_options=RETRY_OPTIONS),
+    description="Considers the box office potential of this film",
+    instruction="""
+    PLOT_OUTLINE:
+    { PLOT_OUTLINE? }
+
+    INSTRUCTIONS:
+    Write a report on the box office potential of a movie like that described in PLOT_OUTLINE based on the reported box office performance of other recent films.
+    """,
+    output_key="box_office_report"
+)
+
+casting_agent = Agent(
+    name="casting_agent",
+    model=Gemini(model=model_name, retry_options=RETRY_OPTIONS),
+    description="Generates casting ideas for this film",
+    instruction="""
+    PLOT_OUTLINE:
+    { PLOT_OUTLINE? }
+
+    INSTRUCTIONS:
+    Generate ideas for casting for the characters described in PLOT_OUTLINE
+    by suggesting actors who have received positive feedback from critics and/or
+    fans when they have played similar roles.
+    """,
+    output_key="casting_report"
+)
+
+preproduction_team = ParallelAgent(
+    name="preproduction_team",
+    sub_agents=[
+        box_office_researcher,
+        casting_agent
+    ]
+)
+
 file_writer = Agent(
     name="file_writer",
     model=Gemini(model=model_name, retry_options=RETRY_OPTIONS),
     description="Creates marketing details and saves a pitch document.",
+    # instruction="""
+    # INSTRUCTIONS:
+    # - Create a marketable, contemporary movie title suggestion for the movie described in the PLOT_OUTLINE. If a title has been suggested in PLOT_OUTLINE, you can use it, or replace it with a better one.
+    # - Use your 'write_file' tool to create a new markdown (.md) file with the following arguments:
+    #     - for a filename, use the movie title
+    #     - Write to the 'movie_pitches' directory.
+    #     - For the 'content' to write, extract the following from the PLOT_OUTLINE:
+    #         - A logline
+    #         - Synopsis or plot outline
+
+    # PLOT_OUTLINE:
+    # { PLOT_OUTLINE? }
+    # """,
+    ## Task 6 only
     instruction="""
     INSTRUCTIONS:
     - Create a marketable, contemporary movie title suggestion for the movie described in the PLOT_OUTLINE. If a title has been suggested in PLOT_OUTLINE, you can use it, or replace it with a better one.
     - Use your 'write_file' tool to create a new txt file with the following arguments:
         - for a filename, use the movie title
         - Write to the 'movie_pitches' directory.
-        - For the 'content' to write, extract the following from the PLOT_OUTLINE:
-            - A logline
-            - Synopsis or plot outline
-
+        - For the 'content' to write, include:
+            - The PLOT_OUTLINE
+            - The BOX_OFFICE_REPORT
+            - The CASTING_REPORT
+    
     PLOT_OUTLINE:
     { PLOT_OUTLINE? }
+    
+    BOX_OFFICE_REPORT:
+    { box_office_report? }
+    
+    CASTING_REPORT:
+    { casting_report? }
     """,
     generate_content_config=types.GenerateContentConfig(
         temperature=0,
@@ -210,11 +269,21 @@ writers_room = LoopAgent(
 #     ],
 # )
 ## Task 5
+# film_concept_team = SequentialAgent(
+#     name="film_concept_team",
+#     description="Write a film plot outline and save it as a text file.",
+#     sub_agents=[
+#         writers_room,
+#         file_writer
+#     ],
+# )
+## Task 6
 film_concept_team = SequentialAgent(
     name="film_concept_team",
-    description="Write a film plot outline and save it as a markdown (.md) file.",
+    description="Write a film plot outline and save it as a text file.",
     sub_agents=[
         writers_room,
+        preproduction_team,
         file_writer
     ],
 )
