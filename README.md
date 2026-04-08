@@ -59,6 +59,8 @@ I'll go to the Sphinx
 You should receive an acknowledgement in the response, like:    
 `Okay, I've saved The Sphinx to your list. Here are some other attractions...`    
 
+<img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/2026-04-07%2020_25_05-NVIDIA%20GeForce%20Overlay.jpg" width=800>
+
 ## 👉 Task 4. Begin building a multi-agent system with a SequentialAgent  
 
   ```bash
@@ -77,6 +79,10 @@ You should receive an acknowledgement in the response, like:
   Marcus Aurelius - a Roman emperor known for his philosophical writings.
   ```
 
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/2026-04-07%2020_32_52-NVIDIA%20GeForce%20Overlay.jpg" width=800>   
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/2026-04-07%2020_39_56-NVIDIA%20GeForce%20Overlay.jpg" width=800>
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/2026-04-07%2020_35_07-.jpg" width=800>  
+  
 ## 👉 Task 5. Add a LoopAgent for iterative work
 
   Return to the ADK Dev UI tab and click the `+ New Session` button in the upper right to start a new session.   
@@ -84,11 +90,13 @@ You should receive an acknowledgement in the response, like:
   When prompted to choose a kind of historical character, choose one that interests you. Some ideas include:     
   
   ```text
+  that woman who made crops yield more food
   an industrial designer who made products for the masses
   a cartographer (a map maker)
-  that guy who made crops yield more food
   ```
 
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/2026-04-07%2020_54_55-.jpg" width=800>  
+  
 ## 👉 Task 6. Use a "fan out and gather" pattern for report generation with a ParallelAgent  
 
   In the ADK Dev UI, click `+ New Session` in the upper right.     
@@ -98,6 +106,13 @@ You should receive an acknowledgement in the response, like:
   ```text
   that actress who invented the technology for wifi
   an exciting chef
-  key players in the worlds fair exhibitions
+  key female players in the worlds fair exhibitions
   ```
+
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/2026-04-07%2021_03_51-NVIDIA%20GeForce%20Overlay.jpg" width=800>     
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/2026-04-07%2021_07_43-.jpg" width=800>   
+
+  New session with the prompt `key female players in the worlds fair exhibitions`:   
+  
+  <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/gcp-adk-multiagent-systems/2026-04-07%2021_12_28-NVIDIA%20GeForce%20Overlay.jpg" width=800>   
 
