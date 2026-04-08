@@ -65,7 +65,9 @@ def write_file(
     filename: str,
     content: str
 ) -> dict[str, str]:
-    target_path = os.path.join(directory, filename)
+    ## Changed by Nov05
+    # target_path = os.path.join(directory, filename)
+    target_path = os.path.join(directory, 'workflow_agents', filename)
     os.makedirs(os.path.dirname(target_path), exist_ok=True)
     with open(target_path, "w") as f:
         f.write(content)
