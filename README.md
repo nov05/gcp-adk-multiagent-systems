@@ -23,3 +23,6 @@ Task 2. Explore transfers between parent, sub-agent, and peer agents
   ```bash
   cp parent_and_subagents/.env workflow_agents/.env
   ```
+  ```bash
+  adk run parent_and_subagents
+  ```
