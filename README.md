@@ -20,3 +20,6 @@ Task 2. Explore transfers between parent, sub-agent, and peer agents
   MODEL=gemini-2.5-flash
   EOF
   ```
+  ```bash
+  cp parent_and_subagents/.env workflow_agents/.env
+  ```
